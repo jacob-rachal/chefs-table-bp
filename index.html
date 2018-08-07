@@ -6,6 +6,9 @@
     <title>Chef's Table</title>
     <!-- Jacob Rachal's version of the Chef's Table fake webpage -->
     <!-- 7/30/2018 -->
+    <!-- Update 08/03/2018: I think I am done? Wait, no I am not, I need to take care of the smooth fade-in for the menu items. -->
+    <!-- Update on the update 08/03/2018: NOW I am done.                Hopefully. -->
+    <!-- Possible to-dos: Connect the fontawesome icons @ the bottom to their respective sites. -->
     <!-- link google fonts here -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- font-family: 'Permanent Marker', cursive; -->
@@ -62,7 +65,8 @@
                     <h1>
                       There is room for you at our table.
                     </h1>
-                    <a href="#" class="btn btn-primary">Make a reservation</a>
+                    <a href="#menu-section" class="btn btn-primary">View our menu</a>
+                    <a href="#reservation-section" class="btn btn-primary">Make a reservation</a>
                 </div>
             </div>
         </div>
@@ -80,10 +84,10 @@
             <div>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#menu-appetizers" aria-controls="home" role="tab" data-toggle="tab">Appetizers</a></li>
-                    <li role="presentation"><a href="#menu-entrees" aria-controls="profile" role="tab" data-toggle="tab">Entrees</a></li>
-                    <li role="presentation"><a href="#menu-desserts" aria-controls="messages" role="tab" data-toggle="tab">Desserts</a></li>
-                    <li role="presentation"><a href="#menu-cocktails" aria-controls="settings" role="tab" data-toggle="tab">Cocktails</a></li>
+                    <li role="presentation" class="active"><a href="#menu-appetizers" aria-controls="home" role="tab" data-toggle="tab"><h3>Appetizers</h3></a></li>
+                    <li role="presentation"><a href="#menu-entrees" aria-controls="profile" role="tab" data-toggle="tab"><h3>Entrees</h3></a></li>
+                    <li role="presentation"><a href="#menu-desserts" aria-controls="messages" role="tab" data-toggle="tab"><h3>Desserts</h3></a></li>
+                    <li role="presentation"><a href="#menu-cocktails" aria-controls="settings" role="tab" data-toggle="tab"><h3>Cocktails</h3></a></li>
                 </ul>
 
                 <!-- Tab panes -->
@@ -93,16 +97,74 @@
                       <!-- .row>.col-md-6*2 do for the rest of these. -->
                         <div class="row">
                               <div class="col-md-6">
-                                left side appetizers
+                                <!-- left side appetizers -->
+                                  <ul>
+                                      <li>
+                                          <h4>Spring Salad</h4>
+                                          <p>
+                                            Our little helper elves diligently scour the Underealm for the finest ingredients to garnish our salads with.
+                                          </p>
+                                      </li>
+                                  </ul>
+
                               </div>
                               <div class="col-md-6">
-                                right side appetizers
+                                <!-- right side appetizers -->
+                                <img src="img/appetizers.jpg" alt="fancy-lookin' salad" class="img-responsive center-block menu-inside-img">
                               </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="menu-entrees">entees</div>
-                    <div role="tabpanel" class="tab-pane fade" id="menu-desserts">desserts</div>
-                    <div role="tabpanel" class="tab-pane fade" id="menu-cocktails">cocktails</div>
+                    <div role="tabpanel" class="tab-pane fade" id="menu-entrees">
+                      <!-- entees -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li>
+                              <h4>Spaghetti & Meatballs</h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eveniet magni iure obcaecati maxime officia a incidunt, at repudiandae. Vitae.</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <!-- picture here. -->
+                          <img src="img/entrees.jpg" alt="fancy-lookin' salad" class="img-responsive center-block menu-inside-img">
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="menu-desserts">
+                      <!-- desserts -->
+                        <div class="row">
+                          <div class="col-md-6">
+                            <ul>
+                              <li>
+                                <h4>Chocolate Lava Cake</h4>
+                                <p>Look, this is the closest you can get to dying via chololate overdose.  Need I say more? </p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                            <!-- picture here. -->
+                            <img src="img/desserts.jpg" alt="fancy-lookin' salad" class="img-responsive center-block menu-inside-img">
+                          </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="menu-cocktails">
+                      <!-- cocktails -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li>
+                              <h4>Lemon Drop</h4>
+                              <p>More Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptas esse quibusdam commodi temporibus perspiciatis!</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <!-- picture here. -->
+                          <img src="img/cocktails.jpg" alt="fancy-lookin' salad" class="img-responsive center-block menu-inside-img">
+                        </div>
+                      </div>
+                    </div>
                     <!-- Just added the bootstrap fade in classes 8/1/2018 -->
                 </div>
 
@@ -125,6 +187,20 @@
                     Make a reservation
                   </h2>
                   <form>
+                        <!-- "
+                                      First Name:"
+                        <br>
+                        <input type="text" name="firstname">
+                        <br>
+                        "
+                                      Last Name:"
+                        <br>
+                        <input type="text" name="lastname">
+                        <br> -->
+                        <!-- ...okay, what is this, why does the spacing work, and did we regress to Early Microsoft Word-style formatting? -->
+                        <!-- I'm not complaining too much due to it working as intended. Just slightly dumbfounded. -->
+                        <!-- Update: Aaahh, okay, that was NOT the correct version of the page to look at.  My mistake. -->
+                        <!-- The below form, however, IS what I want. -->
                         <div class="form-group">
                             <label for="exampleInputEmail1">First Name:</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
@@ -133,6 +209,7 @@
                             <label for="exampleInputPassword1">Last Name:</label>
                             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
                         </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
                         <!-- <div class="form-group">
                           <label for="exampleInputFile">File input</label>
                           <input type="file" id="exampleInputFile">
@@ -145,6 +222,11 @@
                         </div>
                         <button type="submit" class="btn btn-default">Submit</button> -->
                   </form>
+                  <p>
+                     <i class="fab fa-facebook-square"></i>
+                     <i class="fab fa-twitter"></i>
+                     <i class="fab fa-instagram"></i>
+                  </p>
                   <!-- <form action="">
                       First Name:<br>
                       <input type="text"><br>
