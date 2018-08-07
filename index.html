@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ...hold up, don't we need more meta stuff right here? -->
     <title>Chef's Table</title>
     <!-- Jacob Rachal's version of the Chef's Table fake webpage -->
     <!-- 7/30/2018 -->
     <!-- Update 08/03/2018: I think I am done? Wait, no I am not, I need to take care of the smooth fade-in for the menu items. -->
     <!-- Update on the update 08/03/2018: NOW I am done.                Hopefully. -->
     <!-- Possible to-dos: Connect the fontawesome icons @ the bottom to their respective sites. -->
+    <!-- Update 8/7/2018:: cleaned up rampant whitespace in both css and html, as well as removing extra comments. -->
     <!-- link google fonts here -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- font-family: 'Permanent Marker', cursive; -->
@@ -35,20 +37,16 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <h1>Chef's Table</h1>
+                    <h1>Chef's Table</h1><!-- website name in navbar, left -->
                 </a>
             </div> <!-- /.navbar-header -->
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-
                     <li><a href="#home-section">Home</a></li>
                     <!-- this href links to "  <section id="home-section" class="home-section text-white">  " via ids -->
                     <li><a href="#menu-section">Explore the Menu</a></li>
                     <li><a href="#reservation-section">Make a Reservation</a></li>
-
-                    <!-- Leave nav links out for now, at least until Part 2 -->
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
@@ -71,9 +69,10 @@
             </div>
         </div>
     </section>
+    <!-- END LANDING PAGE -->
 
+    <!-- BEGINNING BODY / MENU SERCTION -->
     <section id="menu-section" class="menu-section">
-      <!-- this has nothing in it ath thi time, but it does link to the nav link. -->
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -167,7 +166,6 @@
                     </div>
                     <!-- Just added the bootstrap fade in classes 8/1/2018 -->
                 </div>
-
             </div>
             <!-- ENDOF tabs. -->
           </div>
@@ -187,20 +185,6 @@
                     Make a reservation
                   </h2>
                   <form>
-                        <!-- "
-                                      First Name:"
-                        <br>
-                        <input type="text" name="firstname">
-                        <br>
-                        "
-                                      Last Name:"
-                        <br>
-                        <input type="text" name="lastname">
-                        <br> -->
-                        <!-- ...okay, what is this, why does the spacing work, and did we regress to Early Microsoft Word-style formatting? -->
-                        <!-- I'm not complaining too much due to it working as intended. Just slightly dumbfounded. -->
-                        <!-- Update: Aaahh, okay, that was NOT the correct version of the page to look at.  My mistake. -->
-                        <!-- The below form, however, IS what I want. -->
                         <div class="form-group">
                             <label for="exampleInputEmail1">First Name:</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
@@ -210,17 +194,6 @@
                             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
                         </div>
                         <button type="submit" class="btn btn-default">Submit</button>
-                        <!-- <div class="form-group">
-                          <label for="exampleInputFile">File input</label>
-                          <input type="file" id="exampleInputFile">
-                          <p class="help-block">Example block-level help text here.</p>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Check me out
-                          </label>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button> -->
                   </form>
                   <p>
                      <i class="fab fa-facebook-square"></i>
@@ -228,17 +201,6 @@
                      <i class="fab fa-instagram"></i>
                   </p>
                   <!-- <form action="">
-                      First Name:<br>
-                      <input type="text"><br>
-                      Last Name:<br>
-                      <input type="text"><br> -->
-                      <!-- the submit button activates the form's action -->
-                      <!-- <button type="submit" class="btn btn-primary">Submit</button>
-                      <p>
-                         <i class="fab fa-facebook-square"></i>
-                         <i class="fab fa-twitter"></i>
-                         <i class="fab fa-instagram"></i>
-                      </p>
                   </form> -->
                   <!-- action says what to do once have input. Also, this form is missing a slew of security things -->
                 </div>

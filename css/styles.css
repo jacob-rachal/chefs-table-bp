@@ -3,23 +3,17 @@ body {
   font-family: 'PT Mono', monospace;
   position: relative;
 }
-
-
 .text-white {
   color:#ffffff;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
-
-
 /* END GLOBALS */
 
 /* NAVBAR BEGIN */
 .navbar-default {
   background: #000000;
-  /* border-color: #e7e7e7; */
 }
 .navbar {
   border: 0;
@@ -32,18 +26,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   background: transparent;
   /* note to self: the above is for the full finalized solution, while the below is for the part 1 solution. */
-  /* color: #555;
-    background-color: #e7e7e7; */
 }
-
 .navbar-brand h1 {
   font-family: 'Permanent Marker', cursive;
   margin:0;
   font-size: 24px;
   color: #ffffff;
-  /* color: #777; */
 }
-
 .navbar-brand {
   padding:10px;
 }
@@ -54,29 +43,26 @@ h1, h2, h3, h4, h5, h6 {
 .home-section {
   /* background food dish */
   background-image: url('../img/hero.jpg');
-  background-size: cover;
-  /* cover expands/shrinks image to cover the sixe of the container */
-  background-attachment: fixed;
-  /* fixed to the window */
+  background-size: cover;/* cover expands/shrinks image to cover the sixe of the container */
+  background-attachment: fixed;/* fixed to the window */
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-  /* vh= view height */
+  height: 100vh;/* vh= view height */
   display: flex;
-  align-items: center;
-  /* Aligns the child of this class; i.e. container */
+  align-items: center;/* Aligns the child of this class; i.e. container */
 }
+/* END LANDING PAGE SECTION */
 
 /* MENU-SECTION */
 .menu-section {
   padding-top:60px;
   padding-bottom:60px;
 }
-
 .tab-pane {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+/* END MENU SECTION */
 
 /* FOOTER / reservation section */
 .reservation-section {
@@ -84,7 +70,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 60px;
   background-color: #eeeeee;
 }
-
 /* END FOOTER / RESERVATION SECTIOn */
 
 /* Small Screens */
